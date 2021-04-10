@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shopping.css">
+    <style>
+        img{
+            border: 2px solid blue;
+            width: 100px;
+            margin: 5px;
+        }
+        .main{
+            margin: 200px;
+            width: 800px;
+            height: 800px;
+            background-color:  bisque;
+
+        }
+    </style>
+    <script>
+            var image1 ="<img src='makeup.jpg'/>" ;
+            var image2 ="<img src='podra.jpg'/>" ;
+            var image3 ="<img src='inglot.jpg'/>";
+            var image4 ="<img src='eye1.jpg'/>";
+            var image5 ="<img src='lipp.jpg'/>"
+            
+            function addProduct1(){
+            var main= document.getElementsByClassName("main")[0 ];
+            main.innerHTML=main.innerHTML + image1 ;
+
+        }
+        function addProduct2(){
+            var main= document.getElementsByClassName("main")[0 ];
+            main.innerHTML=main.innerHTML + image2 ;
+        }
+        function addProduct3(){
+            var main= document.getElementsByClassName("main")[0 ];
+            main.innerHTML=main.innerHTML + image3 ;
+        }
+        function addProduct4(){
+            var main= document.getElementsByClassName("main")[0 ];
+            main.innerHTML=main.innerHTML + image4 ;
+        }
+        function addProduct5(){
+            var main= document.getElementsByClassName("main")[0 ];
+            main.innerHTML=main.innerHTML + image5 ;
+        }
+        function removeAll(){
+            var main= document.getElementsByClassName("main")[0];
+            main.innerHTML="";   
+        }
+        
+        </script>
+    </head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="mailto:tate7.140@hotmail.com">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <br> <br><br>
+    <table align ="center" border=5 width=330 height=250>
+        <tr>
+
+            <td> <img width="40%" length="40%" src="makeup.jpg">Makeup</td>
+            <td> 144 $</td>
+            <td><div >
+		<input
+			type="number"
+			id="quantity_6071abd15f66e"
+			class="input-text qty text"
+			step="1"
+			min="1"
+			max="14"
+			name="quantity"
+			value="1"
+			title="כמות"
+			size="4"
+			placeholder=""
+			inputmode="numeric" />
+			</div>
+    <td> <input type="button"  value="Add "  onclick="addProduct1()"><input type="submit"  value="Remove"> </td>
+</tr>
+
+        <tr>
+            <td><img width="40%" src="podra.jpg">MELBA</td> 
+            <td>132 $</td>
+            <td><input
+                type="number"
+                id="quantity_6071abd15f66e"
+                class="input-text qty text"
+                step="1"
+                min="1"
+                max="14"
+                name="quantity"
+                value="1"
+                title="כמות"
+                size="4"
+                placeholder=""
+                inputmode="numeric" />
+                </div></td>
+            <td> <input type="button"  value="Add "  onclick="addProduct2()"><input type="submit"  value="Remove"> </td>
+        </tr>
+        <tr>
+            <td><img width="40%" src="inglot.jpg">INGLOT</td>
+            <td>89 $</td>
+            <td><input
+                type="number"
+                id="quantity_6071abd15f66e"
+                class="input-text qty text"
+                step="1"
+                min="1"
+                max="14"
+                name="quantity"
+                value="1"
+                title="כמות"
+                size="4"
+                placeholder=""
+                inputmode="numeric" /></td>
+            <td><input type="button"  value="Add "  onclick="addProduct3()"><input type="submit"  value="Remove"> </td>
+        </tr>
+        <tr>
+            <td><img width="40%" src="eye1.jpg">EyeLiner</td>
+            <td>124$</td>
+            <td><input
+                type="number"
+                id="quantity_6071abd15f66e"
+                class="input-text qty text"
+                step="1"
+                min="1"
+                max="14"
+                name="quantity"
+                value="1"
+                title="כמות"
+                size="4"
+                placeholder=""
+                inputmode="numeric" /></td>
+            <td><input type="button"  value="Add "  onclick="addProduct4()"><input type="submit"  value="Remove"> </td>
+        </tr>
+        <tr>
+            <td><img width="40%" src="lipp.jpg">LipStick</td>
+            <td>46 $</td>
+            <td><input
+                type="number"
+                id="quantity_6071abd15f66e"
+                class="input-text qty text"
+                step="1"
+                min="1"
+                max="14"
+                name="quantity"
+                value="1"
+                title="כמות"
+                size="4"
+                placeholder=""
+                inputmode="numeric" /></td>
+            <td><input type="button"  value="Add " onclick="addProduct5()"><input type="submit"  value="Remove"></td>
+        </tr>
+
+
+        </table>
+        <div  class="main"><input type="button"  value="RemoveAll "  onclick="removeAll()">
+        </div>
+        
+            
+            <div class="fixed-footer">
+        <div class="container">Copyright &copy; MohIsra</div>        
+    </div>
+    
+</body>
+</html>

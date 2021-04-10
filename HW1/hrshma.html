@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hrshma.css">
+</head>
+<body>
+  <div class="fixed-header">
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="shopping.html">Products</a>
+            <a href="#">Services</a>
+            <a href="mailto:tate7.140@hotmail.com">Contact Us</a>
+        </nav>
+    </div>
+</div>
+<br><br><br>
+    <h3>Registeration</h3>
+  </div>
+<div>
+  <form action="/action_page.php">
+    <label for="email">Enter Your Mail: </label>
+    <input type="email" id="fname" name="mail" placeholder="example@hotmail.com" required>
+
+    <label for="email">Re Enter Your E-Mail:</label>
+    <input type="email" id="lname" name="remail" placeholder="example@hotmail.com" required>
+
+    <label for="NickName">NickName</label>
+    <input type="name" id="NickName" name="NickName" placeholder="JOHN" required>
+
+    
+      
+    <label for="phone">Phone Number</label>
+    <br>
+    <select id="phone" name="phone">
+      <option value="054">054</option>
+      <option value="052">052</option>
+      <option value="050">050</option>
+      <option value="050">055</option>
+      </select>  
+      
+
+      <input type="tel" id="phone" name="phone"
+             pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}"
+             required placeholder="00-000-00">
+      <br>
+      <br><br>
+    <input type="button"  value="Save & submit" onclick="Validate()">
+  </form>
+</div>
+
+<script>
+   function Validate() {
+        var password = document.getElementById("fname").value;
+        var confirmPassword = document.getElementById("lname").value;
+        if (password != confirmPassword) {
+            alert("check your email!");
+            return false;
+        } 
+        else
+
+        window.location.href ="C:\\Users\\W10\\Desktop\\HW1\\bass.html؟email="+document.getElementById("fname").value;
+    }
+</script>
+</body>
+<div class="fixed-footer">
+  <div class="container" >Copyright &copy; MohIsra</div>        
+</div>
+</html>
+
+

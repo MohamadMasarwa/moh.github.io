@@ -1,0 +1,97 @@
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=name], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    background-color:red;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  h3{
+      background-color: tan;
+      margin: auto;
+      width: 50%;
+      border: 3px solid black;
+      border-radius: 20px;
+      padding: 10px;
+      text-align: center;
+    
+  }
+  select[id=phone]{
+      width: 19%;
+  }
+  input[type=tel], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  form{
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+border-radius: 20px;  
+background-color:aqua;
+}
+nav a{
+	color: firebrick;
+	text-decoration: none;
+	padding: 7px 25px;
+	display: inline-block;
+}
+.fixed-header, .fixed-footer{
+	width: 100%;
+	position: fixed;        
+	background: #333;
+	padding: 10px 0;
+	color: firebrick;
+}
+.fixed-header{
+	top: 0;
+}
+.fixed-footer{
+	bottom: 0;
+}
+.container{
+	width: 100%;
+	margin: 0 auto; /* Center the DIV horizontally */
+}
+body{        
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
